@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- Scrolling text
+   <marquee></marquee>
+   it is a paired tag
+   Used to display moving text inside the web page
+   <marquee behavior="" direction=""></marquee> 
+   Attributes:
+      1.behavior: scroll, alternate
+      2. direction: left, right, up and down
+      3. scrollamount: controls speed
+      4. loop: repetations
+      5. height & width
+   -->
+      <div>
+      <marquee behavior="scroll" direction="down">Activating ODSL: c:\Users\shubh\.vscode\extensions\walkfares.opendatadsl-0.17.0
+Checking port
+Running OpenDataDSL process
+code: 0
+stdout: 
+c:\Users\shubh\.vscode\extensions\walkfares.opendatadsl-0.17.0\dist>"C:\Program Files\Java\jdk-17.0.17+10/bin/java" -version 
+
+stderr: openjdk version "17.0.17" 2025-10-21
+OpenJDK Runtime Environment Temurin-17.0.17+10 (build 17.0.17+10)
+OpenJDK 64-Bit Server VM Temurin-17.0.17+10 (build 17.0.17+10, mixed mode, sharing)
+
+Configuring ODSL Language Server
+connected on port: 8009
+Connecting to the ODSL Language Server
+[Error - 12:15:00 PM] Server initialization failed.
+  Message: Internal error.
+  Code: -32603 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: com.opendatadsl.odsl.exception.OpenDSLRuntimeException: [401] {0} Not authorized, check your login credentials
+	at com.opendatadsl.odsl.AADSecurity.login(AADSecurity.java:100)
+	at com.opendatadsl.odsl.service.RestRemoteService.<init>(RestRemoteService.java:56)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.startCommandServer(ODSLLanguageServer.java:68)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.initialize(ODSLLanguageServer.java:46)
+	... 16 more
+
+[Error - 12:15:00 PM] Starting client failed
+  Message: Internal error.
+  Code: -32603 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: com.opendatadsl.odsl.exception.OpenDSLRuntimeException: [401] {0} Not authorized, check your login credentials
+	at com.opendatadsl.odsl.AADSecurity.login(AADSecurity.java:100)
+	at com.opendatadsl.odsl.service.RestRemoteService.<init>(RestRemoteService.java:56)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.startCommandServer(ODSLLanguageServer.java:68)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.initialize(ODSLLanguageServer.java:46)
+	... 16 more
+
+read ECONNRESET
+ECONNRESET
+[Error - 12:15:01 PM] Connection to server is erroring. Shutting down server.
+[Error - 12:15:01 PM] Connection to server is erroring. Shutting down server.
+Activating ODSL: c:\Users\shubh\.vscode\extensions\walkfares.opendatadsl-0.17.0
+Checking port
+Running OpenDataDSL process
+code: 0
+stdout: 
+c:\Users\shubh\.vscode\extensions\walkfares.opendatadsl-0.17.0\dist>"C:\Program Files\Java\jdk-17.0.17+10/bin/java" -version 
+
+stderr: openjdk version "17.0.17" 2025-10-21
+OpenJDK Runtime Environment Temurin-17.0.17+10 (build 17.0.17+10)
+OpenJDK 64-Bit Server VM Temurin-17.0.17+10 (build 17.0.17+10, mixed mode, sharing)
+
+Configuring ODSL Language Server
+connected on port: 8009
+Connecting to the ODSL Language Server
+[Error - 12:15:00 PM] Server initialization failed.
+  Message: Internal error.
+  Code: -32603 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: com.opendatadsl.odsl.exception.OpenDSLRuntimeException: [401] {0} Not authorized, check your login credentials
+	at com.opendatadsl.odsl.AADSecurity.login(AADSecurity.java:100)
+	at com.opendatadsl.odsl.service.RestRemoteService.<init>(RestRemoteService.java:56)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.startCommandServer(ODSLLanguageServer.java:68)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.initialize(ODSLLanguageServer.java:46)
+	... 16 more
+
+[Error - 12:15:00 PM] Starting client failed
+  Message: Internal error.
+  Code: -32603 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: com.opendatadsl.odsl.exception.OpenDSLRuntimeException: [401] {0} Not authorized, check your login credentials
+	at com.opendatadsl.odsl.AADSecurity.login(AADSecurity.java:100)
+	at com.opendatadsl.odsl.service.RestRemoteService.<init>(RestRemoteService.java:56)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.startCommandServer(ODSLLanguageServer.java:68)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.initialize(ODSLLanguageServer.java:46)
+	... 16 more
+
+read ECONNRESET
+ECONNRESET
+[Error - 12:15:01 PM] Connection to server is erroring. Shutting down server.
+[Error - 12:15:01 PM] Connection to server is erroring. Shutting down server.
+
+Activating ODSL: c:\Users\shubh\.vscode\extensions\walkfares.opendatadsl-0.17.0
+Checking port
+Running OpenDataDSL process
+code: 0
+stdout: 
+c:\Users\shubh\.vscode\extensions\walkfares.opendatadsl-0.17.0\dist>"C:\Program Files\Java\jdk-17.0.17+10/bin/java" -version 
+
+stderr: openjdk version "17.0.17" 2025-10-21
+OpenJDK Runtime Environment Temurin-17.0.17+10 (build 17.0.17+10)
+OpenJDK 64-Bit Server VM Temurin-17.0.17+10 (build 17.0.17+10, mixed mode, sharing)
+
+Configuring ODSL Language Server
+connected on port: 8009
+Connecting to the ODSL Language Server
+[Error - 12:15:00 PM] Server initialization failed.
+  Message: Internal error.
+  Code: -32603 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: com.opendatadsl.odsl.exception.OpenDSLRuntimeException: [401] {0} Not authorized, check your login credentials
+	at com.opendatadsl.odsl.AADSecurity.login(AADSecurity.java:100)
+	at com.opendatadsl.odsl.service.RestRemoteService.<init>(RestRemoteService.java:56)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.startCommandServer(ODSLLanguageServer.java:68)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.initialize(ODSLLanguageServer.java:46)
+	... 16 more
+
+[Error - 12:15:00 PM] Starting client failed
+  Message: Internal error.
+  Code: -32603 
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: com.opendatadsl.odsl.exception.OpenDSLRuntimeException: [401] {0} Not authorized, check your login credentials
+	at com.opendatadsl.odsl.AADSecurity.login(AADSecurity.java:100)
+	at com.opendatadsl.odsl.service.RestRemoteService.<init>(RestRemoteService.java:56)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.startCommandServer(ODSLLanguageServer.java:68)
+	at com.opendatadsl.odsl.lsp.ODSLLanguageServer.initialize(ODSLLanguageServer.java:46)
+	... 16 more
+
+read ECONNRESET
+ECONNRESET
+[Error - 12:15:01 PM] Connection to server is erroring. Shutting down server.
+[Error - 12:15:01 PM] Connection to server is erroring. Shutting down server.
+
+</marquee>
+</div>
+    
+</body>
+</html>
