@@ -18,9 +18,90 @@
                             <li>Items</li>
                             <li>Items</li>
                             <li>Items</li>
-                        <ul>                                
+                        <ul>              
+                - Attributes :
+                      1. style: list-style-type : marker                  
             2. Ordered list.
+                - Follows either ascending or descending order.
+                - <ol>, <li>
+                -syntax :
+                    <ol>
+                        <li>Items</li>
+                        <li>Items</li>
+                        <li>Items</li>
+                    <ol> 
+                - Attributes :
+                    1. type : 1, A, a, i, I
+                    2. start : from where list should start - number
+                    3. reversed : Reverses the order of marker        
             3. Definition/Description list.
+                - <dl>, <dt>(definition term) and <dd>(describe definition).
     -->
+
+    <!--1. Unordered List -->
+    <marquee behavior="alternate" direction="up" height="50px">
+            <h2 style="background-color: aqua;">List of States in india</h2>
+    </marquee>
+    <ul style="list-style-type: square;">
+    <li>Uttar Pradesh
+        <ul>
+            <li>Lucknow
+                <ul>
+                    <li>Aliganj</li>
+                    <li>Hazratganj</li>
+                    <li>Gomti Nagar</li>
+                    <li>Indira Nagar</li>
+                    <li>Alambagh</li>
+                </ul>
+            </li>
+            <li>Kanpur</li>
+            <li>Agra</li>
+            <li>Varanasi</li>
+            <li>Prayagraj</li>
+        </ul>
+    </li>
+    <li>Bihar</li>
+    <li>Maharashtra</li>
+    <li>Rajasthan</li>
+    <li>West Bengal</li>
+   </ul>
+
+<hr color="black">
+
+    <!-- Ordered list -->
+    <marquee behavior="alternate" direction="down" height="50px">
+        <h2 style="background-color: aqua;">To do list - 29/07/2026</h2>
+    </marquee>
+    <ol type="A" reversed>
+        <li>Do something nice for someone you care</li>
+        <li>Memorise a poem</li>
+        <li>Watch a classic movie</li>
+        <li>Watch a documentory</li>
+        <li>Invest in cryptocurrency</li>
+        <li>Do coding</li>
+        <li>Solve Rubik's cube</li>
+        <li>Go see a broadway production</li>
+        <li>Write a thankyou letter</li>
+    </ol>
+    
+<hr color="black">
+    <!-- Description list -->
+     <marquee behavior="alternate" direction="up" height="50px">
+        <h2 style="background-color: aqua;">Description list</h2>
+     </marquee>
+    <dl>
+        <dt>Comment<dt>
+            <dd>A comment is text written in the code that is ignored by the browser.</dd>
+            <dd>It is used to explain the code for better understanding.</dd>
+            <dd>Comments help developers debug and maintain the code.</dd>
+            <dd>In HTML, comments are written using:</dd>
+        <dt>To do </dt>
+            <dd>A to-do list is a list of tasks that need to be completed.</dd>
+            <dd>It helps organize and manage work efficiently.</dd>
+            <dd>Tasks can be added, marked as completed, or removed.</dd>
+            <dd>In HTML, a simple to-do list can be created using <ul> or <ol> with <li> elements.</dd>    
+    </dl>
+
+
 </body>
 </html>
