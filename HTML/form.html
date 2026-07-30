@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form Elements 
+
+    -->
+
+    <form action="">
+        <label for="">Enter your name:</label>
+        <input type="text" id="uName" value="" />
+        <h1 id="result"></h1>
+        <script>
+            document.addEventListener("DOMContentLoaded", () =>{
+                const inp = document.getElementById("uName");
+                const resEle = document.getElementById("result")
+                console.log(inp);
+                inp.oninput = function(){
+                    console.log("Entered name :", inp.value);
+                    resEle.textContent = inp.value
+                    if(inp.value === "Shubham"){
+                        resEle.textContent = "Hello Shubham"
+                    }else{
+                        resEle.textContent = "Wrong data"
+                    }
+                };
+            }
+        )
+        </script>
+    </form>
+</body>
+</html>
