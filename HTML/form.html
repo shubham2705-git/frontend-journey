@@ -9,7 +9,7 @@
     <form action="">
         <label for="">Enter Your name:</label>
         <input type="text" id="uName" autofocus value="" maxlength="10" minlength="5" pattern="[A-Za-z]+"  
-        title="Name must between 5 to 10,only lowercase and uppercase and _" placeholder="e.g:Jspider">
+        title="Name must between 5 to 10,only lowercase and uppercase and _" placeholder="e.g:Jspider" required>
     </form>
     <br>
     <br>
@@ -27,7 +27,7 @@
     <label for="">Email</label>
     <input type="email" name="" id=""><br><br>
     
-    <input type="file" name="" id=""><br><br>
+    <input type="file" name="" id="" accept=".pdf, .jpeg"><br><br>
     
     <input type="image" src="" alt=""><br><br>
     
@@ -35,22 +35,22 @@
     <input type="month" name="" id=""><br><br>
     
     <label for="">Number</label>
-    <input type="number" name="" id=""><br><br>
+    <input type="number" name="" id="" min="18" max="60" step="2"><br><br>
     
     <label for="">Password</label>
     <input type="password" name="" id=""><br><br>
     
     <label for="">Range</label>
-    <input type="range" name="" id=""><br><br>
+    <input type="range" name="" id="" max="100" value="89"><br><br>
     
     <label for="">Search</label>
-    <input type="search" name="" id=""><br><br>
+    <input type="search" name="" id="" readonly><br><br>
    
     <label for="">Phone</label>
-    <input type="tel" name="" id=""><br><br>
+    <input type="tel" name="" id="" maxlength="10" pattern="[0-9]+" title="Enter only digits"><br><br>
     
     <label for="">Time</label>
-    <input type="time" name="" id=""><br><br>
+    <input type="time" name="" id="" ><br><br>
     
     <label for="">Url</label>
     <input type="url" name="" id=""><br><br>
