@@ -25,8 +25,10 @@
     
     <input type="datetime-local" name="" id=""><br><br>
     </div>
+
     <br>
     <hr color="black"><hr color="black">
+
     <div style="display: flex; gap: 50px;">
     <label for="">Email</label>
     <input type="email" name="" id=""><br><br>
@@ -49,6 +51,7 @@
     </div>
     <hr color="black">
     <hr color="black">
+
     <div style="display: flex; gap: 50px;">
     <label for="">Search</label>
     <input type="search" name="" id="" readonly><br><br>
@@ -65,6 +68,7 @@
     <label for="">Week</label>
     <input type="week" name="" id="" ><br><br>
     </div>
+    
     <label for="">SpellCheck</label>
     <input type="text" spellcheck="true"><br><br>
 
@@ -72,6 +76,7 @@
     <input type="text" disabled>
 
 
+    <!-- List -->
     <p>Choose your city</p>
     <input list="city">
     <datalist id="city">
@@ -85,6 +90,7 @@
     <hr  color="black">
 
 
+    <!-- Single checkbox -->
     <p>Mode of payment</p>
     <input type="radio" name="payment" id="paylater"><label for="paylater">Pay Later</label><br>
     <input type="radio" name="payment" id="emi"><label for="emi">EMI</label><br>
@@ -93,7 +99,42 @@
     <input type="text" name="" id="" disabled><br>
     <input type="radio" name="payment" id="card"><label for="card">Card</label><br>
     <input type="radio" name="payment" id="cod"><label for="cod">Cash on delivery</label><br>
+    
+    <!-- Multiple Checkbox -->
+    <p>Hobbies</p>
+    <input type="checkbox" name="hobby" id="cricket"><label for="cricket">Dreaming</label><br>
+    <input type="checkbox" name="hobby" id="football"><label for="football">Football</label><br>
+    <input type="checkbox" name="hobby" id="coding"><label for="coding">Coding</label><br>
+    <input type="checkbox" name="hobby" id="reading"><label for="reading">Reading</label><br>
+    <input type="checkbox" name="hobby" id="sleeping"><label for="sleeping">Sleeping</label><br>
+    <input type="checkbox" name="hobby" id="dreaming"><label for="dreaming">Dreaming</label><br>
 
+    <!-- Dropdown -->
+    <p>Select Country</p>
+    <select name="country">
+        <option value="" hidden>--Select Country--</option>
+        <option value="india" selected>India</option>
+        <option value="usa">USA</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+    </select>
+
+    <!-- Long Text -->
+     <p>Add your comment</p>
+     <textarea name="" id="comment" cols="30" rows="10" style="resize: none;" placeholder="What's on your mind" maxlength="150"></textarea>
+     <p>Remaining Characters:<span id="res">150</span></p>   
+     <script>
+        const ele = document.getElementById("comment");
+        ele.oninput = function(){
+            document.getElementById("res").textContent = 150- ele.value.length
+        }
+     </script>
+
+     <!-- Buttons -->
+    <button>Next</button>
+    <input type="submit" value="Login">
+    <input type="reset" value="Reset">
 
     <!-- <form action="">
         <label for="">Enter your name:</label>
