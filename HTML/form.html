@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <div style="display: flex; gap: 50px">
+        <form action="">
         <label for="">Enter Your name:</label>
         <input type="text" id="uName" autofocus value="" maxlength="10" minlength="5" pattern="[A-Za-z]+"  
         title="Name must between 5 to 10,only lowercase and uppercase and _" placeholder="e.g:Jspider" required>
@@ -23,7 +24,10 @@
     <input type="datetime" name="" id=""><br><br>
     
     <input type="datetime-local" name="" id=""><br><br>
-    
+    </div>
+    <br>
+    <hr color="black"><hr color="black">
+    <div style="display: flex; gap: 50px;">
     <label for="">Email</label>
     <input type="email" name="" id=""><br><br>
     
@@ -42,7 +46,10 @@
     
     <label for="">Range</label>
     <input type="range" name="" id="" max="100" value="89"><br><br>
-    
+    </div>
+    <hr color="black">
+    <hr color="black">
+    <div style="display: flex; gap: 50px;">
     <label for="">Search</label>
     <input type="search" name="" id="" readonly><br><br>
    
@@ -53,10 +60,39 @@
     <input type="time" name="" id="" ><br><br>
     
     <label for="">Url</label>
-    <input type="url" name="" id=""><br><br>
+    <input type="url" name="" id="" autocomplete="url"><br><br>
     
     <label for="">Week</label>
-    <input type="week" name="" id=""><br><br>
+    <input type="week" name="" id="" ><br><br>
+    </div>
+    <label for="">SpellCheck</label>
+    <input type="text" spellcheck="true"><br><br>
+
+    <label for="">Disabled</label>
+    <input type="text" disabled>
+
+
+    <p>Choose your city</p>
+    <input list="city">
+    <datalist id="city">
+        <option value="Bangalore"></option>
+        <option value="Hubbali"></option>
+        <option value="Chennai"></option>
+        <option value="Hyderabad"></option>
+        <option value="Bangkok"></option>
+        <option value="Bagalkot"></option>
+    </datalist>
+    <hr  color="black">
+
+
+    <p>Mode of payment</p>
+    <input type="radio" name="payment" id="paylater"><label for="paylater">Pay Later</label><br>
+    <input type="radio" name="payment" id="emi"><label for="emi">EMI</label><br>
+    <input type="radio" name="payment" id="netbanking"><label for="netbanking">Netbanking</label><br>
+    <input type="radio" name="payment" id="upi"><label for="upi">UPI</label><br>
+    <input type="text" name="" id="" disabled><br>
+    <input type="radio" name="payment" id="card"><label for="card">Card</label><br>
+    <input type="radio" name="payment" id="cod"><label for="cod">Cash on delivery</label><br>
 
 
     <!-- <form action="">
