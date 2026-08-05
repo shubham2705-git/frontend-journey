@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            background-color: aqua;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
 </head>
 <body>
     <!-- TYPES OF CSS
@@ -14,12 +21,19 @@
 
     1. Inline css :- 
      * Applying the css prop directly inside the html element by using 'style' attribute.
-     * Props :- This is the type which have the high precedence.
+     * Pros :- This is the type which have the high precedence.
      * Cons :- This is methods subjected only for on element.
-     Example :- 
-    
+     Example :-
     -->
     <h1 style="color: brown; font-size: 50px;">This is the example of inline css</h1>
     <h1 style="color: brown; font-size: 50px;">Lorem ipsum dolor sit Lorem ipsum dolor sit amet.placeat natus suscipit! Voluptates.</h1>
+    <!-- 2. Internal css :-
+     * Applying the css property inside the same html document in <head> using <style>
+     * Pros :- Avoids unneccessory duplication css property.
+     * Cons :- This is method applies css prop to only one html document, maintainability will be hard.   
+    -->
+     <hr border="black">
+    <h1>This is the example of internal css</h1>
+    <h1>Lorem ipsum dolor sit Lorem ipsum dolor sit amet.placeat natus suscipit! Voluptates.</h1>
 </body>
 </html>
