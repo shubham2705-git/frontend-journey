@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--
+     Internal css example :-
+      -->
     <style>
         h1{
             background-color: aqua;
@@ -11,6 +14,8 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
     </style>
+
+    <link rel="stylesheet" href="demo_style.css">
 </head>
 <body>
     <!-- TYPES OF CSS
@@ -27,13 +32,29 @@
     -->
     <h1 style="color: brown; font-size: 50px;">This is the example of inline css</h1>
     <h1 style="color: brown; font-size: 50px;">Lorem ipsum dolor sit Lorem ipsum dolor sit amet.placeat natus suscipit! Voluptates.</h1>
-    <!-- 2. Internal css :-
+    
+    <!-- 
+    
+    2. Internal css :-
      * Applying the css property inside the same html document in <head> using <style>
      * Pros :- Avoids unneccessory duplication css property.
      * Cons :- This is method applies css prop to only one html document, maintainability will be hard.   
+     Example :-
     -->
      <hr border="black">
     <h1>This is the example of internal css</h1>
     <h1>Lorem ipsum dolor sit Lorem ipsum dolor sit amet.placeat natus suscipit! Voluptates.</h1>
+
+    <!-- 
+    
+    3. External css :-
+     * Applying the css property by keeping in separate file.
+     * linking by <link> tag
+     * Can apply same css property to multiple html document.
+     Example :- 
+    -->
+     <hr border="black">
+    <h2>This is the example of External css</h2>
+    <h2>Lorem ipsum dolor sit Lorem ipsum dolor sit amet.placeat natus suscipit! Voluptates.</h2>
 </body>
 </html>
