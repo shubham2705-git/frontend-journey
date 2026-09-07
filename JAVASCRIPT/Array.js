@@ -33,3 +33,16 @@ let arr4 = new Array(10)  if we give single value in the parameter then it will 
 console.log(arr4.length) // 10
 
 */
+
+//\//\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\///\/\/\/\//\/\\//\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\///\/\/\/\//\/\\//\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\///\/\/\/\//\/\
+/*
+Array Methods :\//\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\///\/\/\/\//\/\\//\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\///\/\/\/\//\/\
+Mutating Methods : \//\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\///\/\/\/\//\/\\//\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\///\/\/\/\//\/\
+let arr = [10,20,30,40,50]
+arr.push(60,70,80)
+Push :::::::::: It is used to add the elements to the end of the array and
+it will return the length of the array
+console.log(arr.push(60))
+console.log(arr) // 10,20,30,40,50,60,70,80
+console.log(arr.length) // 8
+*/
