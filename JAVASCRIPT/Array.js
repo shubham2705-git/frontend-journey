@@ -104,4 +104,12 @@ let values2 = [5,8,3,-10,7,-2,6]
 console.log(values2.find(el=>el<0)) 
 
 //filter words with more than 5 characters
-const words = ["apple","banana",""]
+const words = ["apple","banana","cat","elephant","dog","orange"]
+console.log(words.filter(el=>el.length>5))
+
+//filter words starting with "b"
+const words1 = ["apple","banana","ball","cat","bat","dog"]
+console.log(words1.filter(el=>el.charAt(0)=='b'))
+
+//find the first word containing e
+const wor
