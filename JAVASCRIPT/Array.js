@@ -76,3 +76,32 @@ console.log(arr1.splice(2,0,60,70,80,90,100)) // 10,20,60,70,80,90,100,30,40,50
 
 
 */
+let a = function(){
+    console.log("js")
+}
+a();
+// find() method ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+var numbers = [1,1,1,1,1,1,4,4,4,4,4,4,4,]
+console.log(numbers.find(el => el % 2 == 0 ));
+console.log(numbers.find(el => el%2 != 0 ));
+
+// filters() method :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+console.log(numbers.filter(el => el%2 == 0))
+console.log(numbers.filter(el => el%2 != 0))
+
+console.log(numbers.filter(el=>el)) // return all the truthy values
+
+let values = [2,3,6,8,9,12,14,15]
+// get numbers divisible by 3
+console.log(values.filter(el=>el%3==0))
+
+//get numbers between 10 to 30
+console.log(values.filter(el=>el>10 && el<30))
+
+let values2 = [5,8,3,-10,7,-2,6]
+// first negative number
+console.log(values2.find(el=>el<0)) 
+
+//filter words with more than 5 characters
+const words = ["apple","banana",""]
