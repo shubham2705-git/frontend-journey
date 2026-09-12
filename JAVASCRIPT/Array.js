@@ -112,4 +112,13 @@ const words1 = ["apple","banana","ball","cat","bat","dog"]
 console.log(words1.filter(el=>el.charAt(0)=='b'))
 
 //find the first word containing e
-const wor
+const words2 = ["cat","dog","fishe","appl","banana","eye"]
+console.log(words2.find(el=>el.indexOf('e')!=-1))
+
+//find first word that is greater than 10 and divisible by 3
+const arr = [4,9,11,14,18,21,25]
+
+//find first word starts with "s" and has more than 4 characters
+  
+
+
