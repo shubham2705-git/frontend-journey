@@ -119,6 +119,19 @@ console.log(words2.find(el=>el.indexOf('e')!=-1))
 const arr = [4,9,11,14,18,21,25]
 
 //find first word starts with "s" and has more than 4 characters
-  
+let arr1 = [
+    10,
+    [1, 2, 3],
+    { name: "A", age: 20 },
+    function() {
+        console.log("Hello");
+    },
+    "Hello",
+    null,
+    true,
+    undefined
+]
 
+// console.log(arr1)
+// console.log(arr1.sort())
 
