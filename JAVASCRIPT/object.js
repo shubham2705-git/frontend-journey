@@ -20,3 +20,6 @@ console.log(obj.address.city)
 obj.name="Akira"
 obj.address.state="TS"
 
+//Delete
+delete obj.age
+console.log(obj.age)
