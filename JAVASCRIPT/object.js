@@ -51,8 +51,18 @@ console.log(p2)
 console.log(p3)
 */
 
+/*
 // 4. USING class KEYWORD :::::::::::::::::::::::::::
 // es6 version
 class Student{
-    
+    constructor(name,salary,role){
+        this.name = name;
+        this.salary = salary;
+        this.role = role;
+    }
 }
+let s1 = new Student("dev",23000,"developer")
+let s2 = new Student("tatha",26000,"talking person")
+console.log(s1)
+console.log(s2)
+*/
