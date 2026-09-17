@@ -66,3 +66,53 @@ let s2 = new Student("tatha",26000,"talking person")
 console.log(s1)
 console.log(s2)
 */
+
+// Object methods are static methods :::::::::::::::::::::::::::::::::;
+let obj = {
+    name : 'Pawan kalyan',
+    age:56,
+    designation:'DCM',
+    address:{
+        state:'AP',
+        city:'bapatla',
+    } 
+}
+console.log(Object.keys(obj))
+console.log(Object.values(obj))
+console.log(Object.entries(obj))
+
+let std1 = {
+    name : 'jsp',
+    branch :'btm'
+}
+let std2 = {
+    age : 23,
+    location :'btm'
+}
+
+// Merge two objects
+// assign(target,sources)
+console.log(Object.assign(std1,std2))
+console.log(Object.assign({},std1,std2))
+
+//seal() :::::::::::::::::::::::;;
+Object.seal(std1)
+std1.name='qsp'
+
+std1.loc='blr'
+
+delete std1.name
+console.log(std1)
+
+//freeze() :::::::::::::::::::::::::::::
+Object.freeze(std1)
+std1.name='qsp'
+std1.loc='blr'
+delete std1.name
+console.log(std1)
+
+// isSealed() ::::::::::::::::::::::::;;;
+console.log(Object.isSealed(std1))
+
+// isFrozen() :::::::::::::::::::::::::;;;
+console.log(Object.isFrozen(std1))
