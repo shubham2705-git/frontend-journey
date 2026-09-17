@@ -1,5 +1,6 @@
 // Object
-
+// Ways to create object
+// 1. BY USING LITERALS ::::::::::::::::::::::::::::
 let obj = {
     name : 'Pawan kalyan',
     age:56,
@@ -23,3 +24,9 @@ obj.address.state="TS"
 //Delete
 delete obj.age
 console.log(obj.age)
+
+
+// 2. BY USING new KEYWORD :::::::::::::::::::::::::
+let obj2 = new Object()
+obj2.name='jsp'
+console.log(obj2)
