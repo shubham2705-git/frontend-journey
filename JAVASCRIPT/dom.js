@@ -37,9 +37,26 @@
 // console.log(paras)
 // para[3].textContent="btm Jspiders"
 
-// // CSS STYLINGS :=====================================
+// CSS STYLINGS :=====================================
 // let h1=document.querySelector('h1')
 // h1.style.backgroundColor="blue"
 // h1.style.color="white"
 // h1.style.fontSize="40px"
 // h1.style.fontFamily="sans-serif"
+
+
+// document.createElement('tag')=========================================
+// let h1=document.createElement("h1")
+// h1.textContent="DOM";
+
+// // Attribute:
+// h1.setAttribute("id","dom")
+// console.log(h1)
+// document.body.appendChild(h1)
+
+// let p=document.createElement("p")
+// p.textContent="document object model"
+// document.body.appendChild(p)
+
+// let div=document.createElement("div");
+
