@@ -109,4 +109,6 @@
 // console.log(div2)
 // document.body.appendChild(div2)
 
+ let table=document.createElement("table")
+table.border="2px"
 
