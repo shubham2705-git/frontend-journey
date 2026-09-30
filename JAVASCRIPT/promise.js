@@ -47,17 +47,55 @@
 //    }).catch(err=>console.log(err))
 
 // async & await ==================================
-async function fetchdata2(){
-    try{
-        let response=await fetch("https://fakestoreapi.com/products");
-        console.log(response)
-        let final1=await response.json();
-        console.log(final1);
-        final1.forEach((el)=>{
-            console.log(el.title)
-            console.log(el.price)
-        })
-    } catch(error){
-        console.log(error)
-    }
-}
+// async function fetchdata2(){
+//     try{
+//         let response=await fetch("https://fakestoreapi.com/products");
+//         console.log(response)
+//         let final1=await response.json();
+//         console.log(final1);
+//         final1.forEach((el)=>{
+//             console.log(el.title)
+//             console.log(el.price)
+//         })
+//     } catch(error){
+//         console.log(error)
+//     }
+// }
+
+//DESTRUCTURING :=========================================
+
+// extracting/unpacking the values form object or array
+
+// let arr = [10,20,30,40,50]
+// let a=arr[0]
+// let b=arr[1]
+// let [a,b,c,d,e]=arr
+// let[a,,,d,e]=arr //to skip values use,(comma)
+// console.log(a)
+// console.log(d)
+// console.log(e)
+
+//Nested array:
+// let arr1=[10,[20,[30],40],50]; //without flat method
+// //let [a,[b,[c],d],e]=arr1
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// OBJECT :================================
+// let student={
+//     name1:"rahul",
+//     age:23,
+//     email:"rahul@gmail.com",
+//     pswd:423412352134,
+//     address:{
+//         state:'ka',
+//         city:'blr',
+//         pincode:560076
+//     }
+// };
+// let {name1,email,address:{state,city}}=student
+// let {state,city}=student.address
+// console.log(name1)
+// console.log(email)
+// console.log(state)
