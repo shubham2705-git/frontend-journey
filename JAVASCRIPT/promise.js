@@ -32,18 +32,32 @@
 
 
 // FETCH :===================================================
-let fetchData=fetch("https://fakestoreapi.com/products");
-fetchData
-   .then((response)=>{
-    console.log(response)
-    return response.json();
-   })
-   .then((finalData)=>{
-    console.log(finalData)
-    finalData.forEach(el=>{
-        console.log(el.title)
-        console.log(el.price)
-    });
-   }).catch(err=>console.log(err))
+// let fetchData=fetch("https://fakestoreapi.com/products");
+// fetchData
+//    .then((response)=>{
+//     console.log(response)
+//     return response.json();
+//    })
+//    .then((finalData)=>{
+//     console.log(finalData)
+//     finalData.forEach(el=>{
+//         console.log(el.title)
+//         console.log(el.price)
+//     });
+//    }).catch(err=>console.log(err))
 
 // async & await ==================================
+async function fetchdata2(){
+    try{
+        let response=await fetch("https://fakestoreapi.com/products");
+        console.log(response)
+        let final1=await response.json();
+        console.log(final1);
+        final1.forEach((el)=>{
+            console.log(el.title)
+            console.log(el.price)
+        })
+    } catch(error){
+        console.log(error)
+    }
+}
