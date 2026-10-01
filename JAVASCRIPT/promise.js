@@ -99,3 +99,70 @@
 // console.log(name1)
 // console.log(email)
 // console.log(state)
+
+// SPREAD OPERATOR:(...)===============================================
+// ARRAY
+// let arr=[10,20,30,40,50]
+// console.log(arr)
+// console.log(...arr)
+
+// OBJECT :
+// console.log(...Object.keys(student))
+// console.log(...Object.values(student))
+
+// FUNCTION :
+// function demo(a,b,c){
+//     console.log(a+b+c)
+// }
+// demo(...arr)
+
+//REST OPERATOR(...) :======================================================
+// ARRAY
+// let [a,b,...args]=arr;
+// console.log(a)
+// console.log(b)
+// console.log(args)
+
+//  FUNCTION :===================
+// let arr2 = [10,20,30,40,50,60,70,80]
+// function add(a,b,c,...args){
+//     console.log(a+b+c)
+//     console.log(args)
+// }
+// add(...arr2)
+
+// OBJECT :
+// let {name1, age, ...details}=student
+// console.log(name1, age)
+// console.log(details)
+
+
+// MERGE TWO ARRAY :====================
+// let a = ['a','b','c']
+// let b = [10,20,30]
+// let c = [...a, ...b]
+// console.log(c)
+
+
+// MERGE TWO OBJECTS :========================
+// let obj1={
+//     name:'abcd',
+//     age:22
+// }
+// let obj2={
+//     skills:['js','html'],
+//     email:'abc@gmail.com'
+// }
+// let res=Object.assign({},obj1,obj2)
+// console.log(res)
+
+// let res1 = {...obj1,obj2}
+// console.log(res1)
+
+
+let a = [10,20,30]
+let b = a
+b[0]=1000
+console.log(a)
+console.log(b)
+
