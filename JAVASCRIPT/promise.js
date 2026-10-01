@@ -160,9 +160,50 @@
 // console.log(res1)
 
 
-let a = [10,20,30]
-let b = a
-b[0]=1000
-console.log(a)
-console.log(b)
+// let a = [10,20,30]
+// let b = a
+// b[0]=1000
+// console.log(a)
+// console.log(b)
+
+// SHALLOW COPY
+// Array :::::::::::::::
+// let c = [...a]
+// c[0]=23
+// console.log(a)
+// console.log(c)
+
+
+// let a=[10,20,30,[100,200]]
+// let b=[...a]
+// b[0]=1000
+// b[3][0]="jsp"
+// console.log(a) // shallow copy can modify the original array
+
+
+// SHALLOW COPY
+// Object :::::
+// let obj1={
+//     name:"abcd",
+//     age:22,
+//     address:{
+//         state:'ka',
+//         city:'blr'
+//     }
+// }
+// let obj2={...obj1}
+// obj2.name="xyz"
+// obj2.address.state="ap" // modifies both object states
+
+// console.log(obj1)
+// console.log(obj2)
+
+
+//DEEP COPY :=====================
+// TWO WAYS :====================
+// 1. using JSON methods:-
+// javascript object notation
+// {
+//    "key":"abc"
+// }
 
